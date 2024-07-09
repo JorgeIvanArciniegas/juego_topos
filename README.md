@@ -1,2 +1,1 @@
-# juego_topos
-Juego de entretenimiento que prueba el nivel de cocentracion o memoria
+Si quieros probarlo visita: [juego de topos](https://asmodeo1.github.io/juego_topos/)

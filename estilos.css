@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+header h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+#datos {
+    display: flex;
+}
+#datos div {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px;
+}
+
+#juego {
+    background-color: rgb(236, 182, 101);
+    display: grid;
+    grid-template-columns: repeat(6, minmax(50px, 60px));
+    grid-template-rows: repeat(6, 1fr);
+    max-width: fit-content;
+    max-height: fit-content;
+    margin: auto;
+}
+.casilla {
+    outline: solid;
+    aspect-ratio: 1;
+    background-image: url(imagenes/cesped.png);
+    background-size: contain;
+}
+#jugar {
+    display: block;
+    margin: 10px auto;
+    background-color: rgb(54, 134, 225);
+    padding: 5px 20px;
+    border: none;
+    color: white;
+}
+
+#final {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    display: none;
+}
+#final input {
+    font-size: 1.2rem;
+    background-color: rgb(54, 134, 225);
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+}
+
+@keyframes acierto {
+    100% {
+        transform: scale(0.7);
+        transform: rotate(360deg);
+    }
+}

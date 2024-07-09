@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuentra los topos</title>
+    <!-- 
+        icono del topo: https://www.flaticon.com
+        sonidos:
+        https://freesound.org/people/deller24/sounds/112469/
+        https://freesound.org/people/awfulTHEsample/sounds/107871/
+
+    -->
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="codigo.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Busca al topo</h1>
+        <div id="datos">
+            <div>Topos restantes: <span id="toposRestantes">0</span></div>
+            <div>Fallos: <span id="fallos">0</span></div>
+        </div>            
+    </header>
+
+    <main>
+        <section id="juego">
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>
+            <div class="casilla"></div>  
+        </section>
+        <input type="button" value="volver a jugar" id="jugar">          
+    </main>
+    <div id="final">
+        <h2>Fin de partida</h2>
+        <p>Has encontrado a todos los topos.</p>
+        <p>Tu resultado: <span id="resultado"></span></p>
+        <p>Record actual: <span id="record"></span></p>
+
+        <input type="button" value="cerrar" id="cerrar">
+    </div>
+</body>
+</html>
